@@ -35,8 +35,8 @@ my_func("abc", key=123, abc=123)
 def news(**kwargs):
     mystr = kwargs['player'] + "scored" + kwargs['runs'] + "runs"
     return(mystr)
-    if 'place' in kwargs:
-        mystr = mystr+" in "+kwargs['place']
+if 'place' in kwargs:
+    mystr = mystr+" in "+kwargs['place']
 
 
 news(player="erick", runs="2000", place="Nairobi")
